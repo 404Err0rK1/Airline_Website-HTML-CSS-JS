@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Website</title>
+    <!-- External CSS Links -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awosome Link -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+     <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    
+
+    <!-- HEADER-->
+
+    <header>
+        <div class="logo">airline</div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Book</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Destination</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon" id="menuIcon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    
+
+    <!-- Main Section -->
+
+    <main class="main-container">
+        <section class="left-section" data-aos="fade-right" data-aos-duration="3000">
+            <div class="content">
+                <h1>Discover the World<br> with our flights.</h1>
+                <form id="bookingForm">
+                    <div class="trip-type">
+                        <label>
+                            <input type="radio" name="tripType" value="return" required>Return
+                        </label>
+                        <label>
+                            <input type="radio" name="tripType" value="oneway" required>Oneway
+                        </label>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-wrapper">
+                            <select id="takeOff" required>
+                                <option value="" disabled selected>Takeoff</option>
+                                <option value="USA">USA</option>
+                                <option value="Canada">Canada</option>
+                                <option value="UK">UK</option>
+                                <option value="India">India</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="France">France</option>
+                                <option value="Germany">Germany</option>
+                                <option value="South Africa">Greece</option>
+                                <option value="Mexico">Gerogia</option>
+                                <option value="Spain">Spain</option>
+                                <option value="Russia">Russia</option>
+                                <option value="Russia">Estonia</option>
+                                <option value="Russia">Cyprus</option>
+                                <option value="Russia">Denmark</option>
+                            </select>
+                        </div>
+
+                        <div class="icon">
+                            <i class="fa-solid fa-plane"></i>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <select id="arrival" required>
+                                <option value="" disabled selected>Arrival</option>
+                                <option value="USA">USA</option>
+                                <option value="Canada">Canada</option>
+                                <option value="UK">UK</option>
+                                <option value="India">India</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="France">France</option>
+                                <option value="Germany">Germany</option>
+                                <option value="South Africa">Greece</option>
+                                <option value="Mexico">Gerogia</option>
+                                <option value="Spain">Spain</option>
+                                <option value="Russia">Russia</option>
+                                <option value="Russia">Estonia</option>
+                                <option value="Russia">Cyprus</option>
+                                <option value="Russia">Denmark</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-wrapper">
+                            <input type="date" id="departureDate" name="date" required>
+                        </div>
+
+                        <div class="icon">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <input type="date" id="returnDate" name="date" required>
+                        </div>
+                    </div>
+
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+
+            <div class="slider">
+                <div class="slider-header">
+                    <h2>Popular beach destination</h2>
+                    <div class="slider-buttons">
+                        <button id="prev" class="slider-btn">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </button>
+
+                        <button id="next" class="slider-btn">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="slider-container">
+                    <div class="slider-images">
+                        <div class="slide">
+                            <img src="https://img.freepik.com/free-photo/beautiful-nature-landscape-with-black-sandy-beach-ocean_23-2151380422.jpg" alt="Cyprus">
+                            <div class="info">
+                                <p class="location">Cyprus</p>
+                                <p class="sub-location">El Nido</p>
+                                <div class="price">
+                                    <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                    <span>643€</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="https://i.pinimg.com/236x/6c/6a/fe/6c6afedaffdc63f87e310dfee64cddf4.jpg" alt="Estonia">
+                            <div class="info">
+                                <p class="location">Estonia</p>
+                                <p class="sub-location">El Nido</p>
+                                <div class="price">
+                                    <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                    <span>643€</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="https://wallpapers.com/images/featured/hd-nature-ngdfb9h966h4z3le.jpg" alt="France">
+                            <div class="info">
+                                <p class="location">France</p>
+                                <p class="sub-location">El Nido</p>
+                                <div class="price">
+                                    <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                    <span>643€</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="https://e1.pxfuel.com/desktop-wallpaper/820/290/desktop-wallpaper-canada-outdoor-rocky-mountains-lake-louise-moraine-lake-niagara-moraine-lake-canadian-rockies.jpg" alt="Germany">
+                            <div class="info">
+                                <p class="location">Germany</p>
+                                <p class="sub-location">El Nido</p>
+                                <div class="price">
+                                    <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                    <span>643€</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="https://www.pixelstalk.net/wp-content/uploads/image10/Tropical-island-with-palm-trees-white-sand-beach-turquoise-water-Nature-Wallpaper-HD-for-PC.jpg" alt="India">
+                            <div class="info">
+                                <p class="location">India</p>
+                                <p class="sub-location">El Nido</p>
+                                <div class="price">
+                                    <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                    <span>643€</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="https://c4.wallpaperflare.com/wallpaper/776/263/714/beach-palm-trees-sand-sea-wallpaper-preview.jpg" alt="Greece">
+                            <div class="info">
+                                <p class="location">Greece</p>
+                                <p class="sub-location">El Nido</p>
+                                <div class="price">
+                                    <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                    <span>643€</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="right-section" data-aos="fade-up-left" data-aos-duration="3000">
+            <img src="Assets/plane.png">
+        </section>
+    </main>
+    <footer class="footer">
+        © 2024 Ho Tuan Phat. All Rights Reserved.
+    </footer>
+
+
+    
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="script.js"></script>
+    <!-- AOS JS -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+        AOS.init({
+            offset: 1
+        });
+    </script>
+</body>
+</html>
